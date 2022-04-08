@@ -3,17 +3,31 @@ html {
 
 body {
   height: 100vh;
-  background: #181818 linear-gradient(#131313, #181818) no-repeat fixed;
+  background-image: url(../img/background.png);
+/*  background: #181818 linear-gradient(#131313, #181818) no-repeat fixed; */
   background-size: cover;
+  background-repeat:no-repeat;
   font-size: 1em;
   color: #fff;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif !important; }
+  font-family: "Roboto", "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif !important; }
+
+.title {
+	font-family: 'Fjalla One', sans-serif;
+	text-align: center;
+	color: #ffffff;
+	font-size: 2.4em;
+	margin-bottom: 20px;
+}
+
+h1 {
+	font-family: 'Fjalla One', sans-serif;
+}
 
 .btn {
-  font-size: 0.8em;
-  text-transform: uppercase;
-  border-radius: 2em;
-  height: 3em; }
+	font-size: 1em;
+	border-radius:2em;
+	height:3em;
+}
 
 .btn:focus {
   outline: none;
@@ -22,20 +36,24 @@ body {
   background-color: #1ed760; }
 
 .btn:active {
-  color: #d4d1d1 !important;
-  outline: none !important;
-  border: none !important;
-  box-shadow: none !important;
-  background-color: #1db954 !important; }
+	color:#ffffff!important;
+	outline:none!important;
+	border:none!important;
+	box-shadow:none!important;
+	background-color:#005A65!important 
+}
 
 .btn-primary {
-  background-color: #1db954;
-  border-color: #1db954; }
+	background-color:#00B3C7;
+	border-color:#00B3C7; 
+	margin-top:10px;
+}
 
 .btn-primary:hover {
-  background-color: #1ed760;
-  border-color: #1ed760;
-  font-weight: bold; }
+	background-color:#005A65;
+	border-color:#005A65;
+	font-weight:700; 
+}
 
 .btn-primary:disabled,
 .btn-primary:disabled:hover {
@@ -43,14 +61,18 @@ body {
   border-color: #a0a0a0 !important; }
 
 #root {
-  height: 100vh; }
+	height:100vh;
+	background-image: url(..img/bg_playlist.png);
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	background-color: #000000;
+}
 
 .mainContent {
   padding-bottom: 3em; }
 
 .loginContainer {
-  position: absolute;
-  width: 100%;
+  width: 70%;
   left: 0;
   max-width: 100%; }
 
@@ -72,7 +94,12 @@ a.showMore:hover {
   text-decoration: underline !important; }
 
 img.coverImage {
-  width: 100%; }
+  width: 70%; }
+  
+ol.queuedTracks:first-child {
+	background-color: #0390A2;
+    padding: 15px 29px;
+}
 
 @media (max-width: 770px) {
   img.coverImage {
@@ -85,8 +112,10 @@ img.coverImage {
     min-width: 250px; } }
 
 .currentlyPlaying {
-  text-align: center;
-  padding: 0; }
+	text-align:center;
+	padding: 0 30px;
+    border-right: 1px solid #1C7A97;
+}
 
 input {
   border-radius: 2em !important; }
